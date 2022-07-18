@@ -9,8 +9,25 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    border-radius: 20px;
+    /* animation: App-logo-spin infinite 20s linear; */
   }
+}
+
+.Test{
+  /* flex: 1; */
+  /* height: 400px; */
+  /* background-color: green; */
+}
+
+.Test2{
+  /* flex: 1; */
+  height: 400px;
+  /* min-height: 100vh; */
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-header {
