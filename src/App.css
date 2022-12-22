@@ -15,9 +15,9 @@
 }
 
 .Test{
-  /* flex: 1; */
-  /* height: 400px; */
-  /* background-color: green; */
+  flex: 1; 
+  height: 400px;
+  background-color: green;
 }
 
 .Test2{
