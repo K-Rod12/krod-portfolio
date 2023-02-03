@@ -2,22 +2,32 @@
   text-align: center;
 }
 
+.logo {
+  height: 50vh;
+  align-self: center;
+}
+
 .App-logo {
+  border-radius: 20px;
   height: 40vmin;
-  pointer-events: none;
+  /* animation: App-logo-spin infinite 20s linear; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    border-radius: 20px;
-    /* animation: App-logo-spin infinite 20s linear; */
-  }
-}
-
-.Test{
-  flex: 1; 
-  height: 400px;
+.Main{
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
   background-color: green;
+}
+
+.CarouselItem{
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  background-color: blue;
 }
 
 .Test2{
