@@ -1,0 +1,103 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+  
+  .header-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-nav-item {
+    color: #fff;
+    cursor: pointer;
+    padding: 0 20px;
+  }
+  
+  .header-nav-item.active {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .section-text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .project-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .project-item {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .form-input {
+    border: 1px solid #333;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .form-submit {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+  
+  .footer-text {
+    font-size: 18px;
+  }
+  

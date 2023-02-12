@@ -4,6 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// const express = require("express");
+// const app = express();
+// const PORT = process.env.PORT || 3000;
+
+// app.use(express.urlencoded({extended: true})); 
+// app.use(express.json());
+
+// app.listen(PORT, () => {
+//   console.log(`The server is running on PORT: ${PORT}`);
+// })
+
+// app.get('/', (req, res) => {
+//   console.log('test');
+//   res.send("welcome to simplilearn")
+// })
+
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -14,4 +32,4 @@ root.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();

@@ -8,7 +8,7 @@
 }
 
 .App-logo {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   height: 40vmin;
   /* animation: App-logo-spin infinite 20s linear; */
 }
@@ -20,6 +20,7 @@
   align-self: center;
   align-items: center;
   background-color: green;
+  padding: 100;
 }
 
 .CarouselItem{
