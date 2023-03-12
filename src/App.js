@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./App.css";
-import pic1 from "./assets/RecipeScreenshot.webp";
 import profile from "./assets/RODRIGUEZ_KENLEY.jpg";
 import { Button, Carousel } from "react-bootstrap";
 import Sidebar from "./components/Sidebar";
@@ -44,19 +43,6 @@ function App() {
     }
   };
 
-  // const handleScroll = (event) => {
-  //   console.log(window.scrollY);
-  //   console.log(scrollY);
-  //   if (window.scrollY > scrollY && scrollY ) {
-  //     setShowImage(1);
-  //   } else {
-  //     setShowImage(0);
-  //   }
-
-  //   setSetScrollX(window.scrollY / 2)
-  //   setSetScrollY(- window.scrollY / 2)
-  // };
-
   useEffect(() => {
     // setTextSlide(0);
     // handleTextSlide();
@@ -79,10 +65,6 @@ function App() {
         >
           <div
             style={{
-              // transform: textSlide
-              //   ? `translate(5%, 5%)`
-              //   : "translate(0, 0) scale(1)",
-              // transition: "transform 1.0s ease-in",
               width: "50%",
               padding: "8rem",
               alignContent: "center",
@@ -114,41 +96,12 @@ function App() {
         </div>
       </div>
 
-      <main className="Main" ref={(el) => (sectionsRef.current[0] = el)}>
+      <main className="Main" ref={(el) => (sectionsRef.current[1] = el)}>
         <h2
           style={{ margin: "0 0 20px 0", fontWeight: "bold", color: "white" }}
         >
           Projects
         </h2>
-
-        {/* {currentPage === "about" && (
-          <div style={{ paddingRight: 100, paddingLeft: 100 }}>
-            <Carousel style={{ padding: 10 }}>
-              <Carousel.Item>
-                <img
-                  style={{ height: "90vh", paddingBottom: 100 }}
-                  src={pic1}
-                  alt="profile"
-                />
-                <Carousel.Caption>
-                  <h3>MeChef</h3>
-                  <p>
-                    Application that uses recipe api to return dishes related to
-                    the ingredients that you have in your pantry
-                  </p>
-                </Carousel.Caption>
-              </Carousel.Item>
-
-              <Carousel.Item>
-                <img style={{ height: "90vh" }} src={profile} alt="profile" />
-                <Carousel.Caption>
-                  <h3>About Me</h3>
-                  <p>A little about myself</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-            </Carousel>
-          </div>
-        )} */}
 
         {currentPage === "projects" && (
           <section className="Projects-section">

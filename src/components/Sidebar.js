@@ -1,28 +1,35 @@
 import React from "react";
-
-function Sidebar({handleClick, handleImageClick}) {
-
+import { FaBeer } from "react-icons/fa";
+import { VscFileCode } from "react-icons/vsc";
+import { MdHome } from "react-icons/md";
+// import { IconName } from "react-icons/vsc";
+function Sidebar({ handleClick, handleImageClick }) {
   return (
     <div
       style={{
         position: "fixed",
         top: "45%",
         right: 20,
-        borderRadius: 10,
+        borderRadius: 30,
         display: "flex",
+        backgroundColor: "orange",
+        // backgroundColor: "white",
         flexDirection: "column",
         justifyContent: "center",
-        backgroundColor: "white",
         padding: "1rem",
       }}
     >
       {["Section 1", "Section 2", "Section 3"].map((section, index) => (
         <button
+          className="custom-button"
           key={section}
-          style={{ margin: "0 1rem" }}
+          style={{ margin: "1rem 0rem" }}
           onClick={() => handleClick(index)}
         >
-          {section}
+          {index === 0 && <MdHome color="white" size={40} />}
+          {index === 1 && <VscFileCode color={"white"} size={40} />}
+          {index === 2 && <VscFileCode size={40} />}
+          {/* {section} */}
         </button>
       ))}
     </div>

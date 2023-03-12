@@ -13,6 +13,17 @@
   /* animation: App-logo-spin infinite 20s linear; */
 }
 
+.custom-button{
+  all: unset;
+  /* background-color: blue; */
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.custom-button:focus{
+  outline: 1px solid purple;
+}
+
 .Main{
   text-align: center;
   height: 100vh;
