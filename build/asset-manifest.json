@@ -1,15 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.1912d719.css",
-    "main.js": "/static/js/main.2bc282bb.js",
+    "main.css": "/static/css/main.defcc24e.css",
+    "main.js": "/static/js/main.d18f31c0.js",
     "static/media/RODRIGUEZ_KENLEY.jpg": "/static/media/RODRIGUEZ_KENLEY.678ff096dcdf017df0b8.jpg",
-    "static/media/RecipeScreenshot.webp": "/static/media/RecipeScreenshot.308dbf2d1f8b74e22a33.webp",
     "index.html": "/index.html",
-    "main.1912d719.css.map": "/static/css/main.1912d719.css.map",
-    "main.2bc282bb.js.map": "/static/js/main.2bc282bb.js.map"
+    "main.defcc24e.css.map": "/static/css/main.defcc24e.css.map",
+    "main.d18f31c0.js.map": "/static/js/main.d18f31c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.1912d719.css",
-    "static/js/main.2bc282bb.js"
+    "static/css/main.defcc24e.css",
+    "static/js/main.d18f31c0.js"
   ]
 }
