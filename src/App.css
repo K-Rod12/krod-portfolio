@@ -30,8 +30,58 @@
   justify-content: center;
   align-self: center;
   align-items: center;
-  background-color: green;
+  /* background-color: green; */
   padding: 100;
+}
+
+.white-text {
+  color: white;
+}
+
+.Container{
+  background: #1D2737;
+  background-color: #1D2737;
+  overscroll-behavior: contain;
+  overflow-y: scroll;
+}
+
+section{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+}
+
+section:nth-of-type(1){
+  background-image: linear-gradient(black, #1D2737);
+}
+
+section:nth-of-type(2){
+  /* background-color: green; */
+  background-image: linear-gradient(#1D2737, darkblue);
+}
+
+/* .hiddenLeft{
+  opacity: 0;
+  filter:blur(5px);
+  transform: translateX(-50%);
+  transition: all 1s;
+}
+
+.hiddenRight{
+  opacity: 0;
+  filter:blur(5px);
+  transform: translateX(50%);
+  transition: all 1s;
+} */
+
+.show{
+  opacity: 1;
+  filter:blur(0);
+  transform: translateX(0);
+  transition: all 1s;
 }
 
 .CarouselItem{
@@ -66,6 +116,12 @@
 .App-link {
   color: #61dafb;
 }
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .hidden {
+    transition: all 1s;
+  }
+} */
 
 @keyframes App-logo-spin {
   from {
