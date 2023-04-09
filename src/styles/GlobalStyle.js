@@ -23,6 +23,44 @@ const GlobalStyle = createGlobalStyle`
     color: var(--lightest-slate);
   }
 
+  .typed-text {
+    color: #333;
+    font-size: 24px;
+    border-right: .15em solid #333;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+      typewriter 4s steps(44) 1s 1 normal both,
+      blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  .typed-text::after {
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 100%;
+    border-right: .15em solid #333;
+    animation:
+      typewriter-after 4s steps(44) 1s 1 normal both,
+      blinkTextCursor-after 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blinkTextCursor {
+    from { border-right-color: #333 }
+    to { border-right-color: transparent }
+  }
+  @keyframes typewriter-after {
+    from { width: 0 }
+    to { width: .15em }
+  }
+  @keyframes blinkTextCursor-after {
+    from { border-right-color: transparent }
+    to { border-right-color: #333 }
+
   
 //   body {
 //     margin: 0;

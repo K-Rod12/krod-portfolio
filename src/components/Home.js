@@ -1,6 +1,5 @@
 import "aos/dist/aos.css";
 import React, { useState, useRef, useEffect } from "react";
-import "../styles/App.css";
 import memoji from "../assets/Memoji.png";
 import styled from "styled-components";
 
@@ -28,66 +27,63 @@ const StyleHome = styled.section`
 const Home = () => {
   return (
     <StyleHome>
-        <div
-          data-aos="fade-right"
-          className="hiddenLeft"
-          style={{
-            flex: 1.2,
-            // backgroundColor: "green",
-            // height: "100%",
-            padding: "2em",
-            margin: "1em 2em",
-            alignContent: "center",
-            alignSelf: "center",
-            justifyContent: "center",
-          }}
+      <div
+        data-aos="fade-right"
+        style={{
+          flex: 1.2,
+          // backgroundColor: "green",
+          padding: "2em 2em",
+          margin: "0em 3em",
+          // marginBottom: 100,
+          justifyContent: "center",
+        }}
+      >
+        <h1
+          className="typed-text"
+          style={{ fontSize: 25, color: "var(--blue)", maxWidth: "450px" }}
         >
-          <h1 style={{ fontSize: 25, color: 'var(--blue'}}>
-            Hi there! 👋🏽 My Name is 
-          </h1>
-          {/* <h1
-            style={{ fontSize: 55, }}
-            className="white-text"
+          Hi there! 👋🏽 My Name is
+        </h1>
+        <h2 style={{ fontSize: 60 }} className="white-text">
+          Kenley Rodriguez
+        </h2>
+        <p
+          style={{ marginTop: 20, color: "#8892B0", fontSize: 18 }}
+          className="white-text"
+        >
+          I am a full-stack Software Engineer with a passion for building
+          scalable and user-friendly web applications. I am currently working as
+          a backend developer at {""}
+          <a
+            style={{ color: "orange" }}
+            href="https://www.discover.com/company/our-company/"
           >
-            My name is
-          </h1> */}
-          <h2
-            style={{ fontSize: 60,}}
-            className="white-text"
-          >
-            Kenley Rodriguez
-          </h2>
-          <p
-            style={{ marginTop: 20, color: "#8892B0", fontSize: 18 }}
-            className="white-text"
-          >
-            I am a full-stack Software Engineer with a passion for building scalable and
-            user-friendly web applications. I am currently working as a backend developer at {""}
-            <a style={{color: 'orange'}} href="https://www.discover.com/company/our-company/">Discover Financial Services</a>
-          </p>
-        </div>
+            Discover Financial Services
+          </a>
+        </p>
+      </div>
 
-        <div
-          data-aos="fade-left"
-          className="hiddenRight"
+      <div
+        data-aos="fade-left"
+        className="hiddenRight"
+        style={{
+          flex: 1,
+          // margin: "0em 5em",
+          textAlign: "center",
+          // margin: "auto",
+        }}
+      >
+        <img
           style={{
-            flex: 1,
-            // margin: "0em 5em",
-            textAlign: "center",
-            // margin: "auto",
+            width: "300px",
+            height: "300px",
+            backgroundPosition: "center",
           }}
-        >
-          <img
-            style={{
-              width: "300px",
-              height: "300px",
-              backgroundPosition: "center",
-            }}
-            src={memoji}
-            className="App-logo"
-            alt="profile"
-          />
-        </div>
+          src={memoji}
+          className="App-logo"
+          alt="profile"
+        />
+      </div>
     </StyleHome>
   );
 };

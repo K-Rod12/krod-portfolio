@@ -2,14 +2,19 @@ import React from "react";
 import { FaBeer } from "react-icons/fa";
 import { VscFileCode } from "react-icons/vsc";
 import { MdHome } from "react-icons/md";
-// import { IconName } from "react-icons/vsc";
-function Sidebar({ handleClick, handleImageClick }) {
+import "aos/dist/aos.css";
+
+function Website({ }) {
+
+  const websites = ['https://www.linkedin.com/in/kenley-rod/', "https://github.com/K-Rod12"];
+
   return (
     <div
+      data-aos="fade-left"
       style={{
         position: "fixed",
-        top: "67%",
-        left: 20,
+        top: "75%",
+        left: "2%",
         borderRadius: 30,
         display: "flex",
         backgroundColor: "transparent",
@@ -19,15 +24,16 @@ function Sidebar({ handleClick, handleImageClick }) {
         padding: "1rem",
       }}
     >
-      {["Section 1", "Section 2", "Section 3"].map((section, index) => (
+      {websites.map((website, index) => (
         <button
           className="custom-button"
-          key={section}
+          key={website}
           style={{ margin: "1rem 0rem" }}
-          onClick={() => handleClick(index)}
+          onClick={() => window.location.href=website}
         >
           {index === 0 && (
             <svg
+              href="www.google.com"
               width="50"
               height="50"
               viewBox="0 0 25 25"
@@ -72,4 +78,4 @@ function Sidebar({ handleClick, handleImageClick }) {
   );
 }
 
-export default Sidebar;
+export default Website;

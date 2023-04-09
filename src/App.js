@@ -6,8 +6,9 @@ import memoji from "./assets/Memoji.png";
 import Home from "./components/Home";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import TopNav from "./components/Navbar";
 import { Button, Carousel } from "react-bootstrap";
-import Sidebar from "./components/Sidebar";
+import Website  from "./components/Website";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -53,7 +54,7 @@ function App() {
   // hiddenRightElements.forEach((el) => observer.observe(el));
 
   useEffect(() => {
-    // document.body.style.backgroundColor = "#0E192D";
+    document.body.style.backgroundColor = "#0E192D";
     Aos.init({ duration: 2000 });
     // document.body.style.overscrollBehaviorY = 'contain';
     // document.documentElement.style.overflowY = 'scroll';
@@ -67,6 +68,8 @@ function App() {
 
         <GlobalStyle/>
 
+        <TopNav/>
+
         <Home/>
 
 
@@ -77,7 +80,7 @@ function App() {
         </section>
         {/* <section></section> */}
 
-        <Sidebar handleClick={handleMultipleClick} />
+        <Website handleClick={handleMultipleClick} />
       </div>
     </body>
   );
